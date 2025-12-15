@@ -201,19 +201,30 @@ h2{
 
 /* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
 @media (max-width: 768px) {
+  body{
+    padding:10px 0;
+    overflow-y:auto;
+  }
+  
   .container{
-    max-width:95%;
+    max-width:90%;
     padding:0 10px;
+    margin:0 auto;
   }
   
   .video-box{
     max-width:100%;
+    max-height:60vh;
     border-radius:16px;
     box-shadow:0 15px 35px rgba(0,0,0,.7);
   }
   
   video{
-    aspect-ratio:9/16; /* вертикальное видео на мобилке */
+    width:100%;
+    height:auto;
+    max-height:60vh;
+    aspect-ratio:4/5;
+    object-fit:contain;
   }
   
   .play-btn{
@@ -272,13 +283,22 @@ h2{
 }
 
 @media (max-width: 480px) {
+  body{
+    padding:8px 0;
+  }
+  
   .container{
-    max-width:100%;
+    max-width:95%;
     padding:0 8px;
   }
   
   .video-box{
+    max-height:55vh;
     border-radius:12px;
+  }
+  
+  video{
+    max-height:55vh;
   }
   
   .play-btn{
