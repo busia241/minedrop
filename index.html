@@ -198,6 +198,125 @@ h2{
   color:#ff9f1a;
   font-weight:900;
 }
+
+/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
+@media (max-width: 768px) {
+  .container{
+    max-width:95%;
+    padding:0 10px;
+  }
+  
+  .video-box{
+    max-width:100%;
+    border-radius:16px;
+    box-shadow:0 15px 35px rgba(0,0,0,.7);
+  }
+  
+  video{
+    aspect-ratio:9/16; /* вертикальное видео на мобилке */
+  }
+  
+  .play-btn{
+    max-width:100%;
+    padding:12px 16px;
+    font-size:16px;
+    margin-top:20px;
+  }
+  
+  .play-btn img.pickaxe-icon{
+    width:24px;
+    height:24px;
+  }
+  
+  h2{
+    margin-top:30px;
+    font-size:20px;
+  }
+  
+  .tg-btn{
+    padding:12px 24px;
+    font-size:14px;
+    margin-top:18px;
+  }
+  
+  .popup-box{
+    max-width:90%;
+    padding:20px 16px;
+    border-radius:16px;
+  }
+  
+  .popup-box h3{
+    font-size:18px;
+  }
+  
+  .popup-box p{
+    font-size:14px;
+    margin-top:10px;
+  }
+  
+  /* падающие элементы меньше на мобилке */
+  .mparticle{
+    width:32px !important;
+    height:32px !important;
+    max-width:48px;
+    max-height:48px;
+  }
+  
+  .loader-box p{
+    font-size:14px;
+  }
+  
+  .percent{
+    font-size:18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    max-width:100%;
+    padding:0 8px;
+  }
+  
+  .video-box{
+    border-radius:12px;
+  }
+  
+  .play-btn{
+    padding:10px 14px;
+    font-size:15px;
+    gap:8px;
+  }
+  
+  .play-btn img.pickaxe-icon{
+    width:20px;
+    height:20px;
+  }
+  
+  h2{
+    font-size:18px;
+    margin-top:24px;
+  }
+  
+  .tg-btn{
+    padding:10px 20px;
+    font-size:13px;
+  }
+  
+  .popup-box{
+    padding:18px 14px;
+  }
+  
+  .popup-box h3{
+    font-size:16px;
+  }
+  
+  .mparticle{
+    width:28px !important;
+    height:28px !important;
+    max-width:40px;
+    max-height:40px;
+  }
+}
 </style>
 </head>
 
