@@ -24,26 +24,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5NWKZ6HJ');</script>
 <!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<title>MINEDROP ИГРАТЬ - Испытай удачу и выиграй призы | Играй в MineDrop</title>
-<meta name="description" content="MINEDROP ИГРАТЬ - увлекательная игра с призами. Испытай удачу, играй в MineDrop и выигрывай реальные деньги. Присоединяйся к игре прямо сейчас в Telegram!">
-<meta name="keywords" content="MINEDROP, MINEDROP играть, игра MINEDROP, MineDrop, испытай удачу, игра с призами, выиграй деньги, игра в телеграм, minecraft игра">
+<title>Minedrop — слот в стиле Майнкрафт с бонусами до ×5000 | Играть в Minedrop</title>
+<meta name="description" content="Играй в слот Minedrop: стиль Майнкрафт, каскады, фриспины и бонусы до ×5000! Испытай удачу прямо сейчас. Играть в майндроп здесь.">
+<meta name="keywords" content="minedrop, minedrop играть, играть в minedrop, играть в майндроп, майндроп, minedrop слот, слот minedrop, игра minedrop, слот майнкрафт, майнкрафт слот, minedrop бонусы, minedrop фриспины, minedrop каскады, minedrop игра, minedrop призы, minedrop выиграть, minedrop телеграм, minecraft игра, minedrop онлайн, играть майндроп">
 <meta name="author" content="MineDrop">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://minedrop-game.vercel.app/">
+<link rel="icon" type="image/png" href="images/pickaxe.png.png">
+<link rel="apple-touch-icon" href="images/pickaxe.png.png">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://minedrop-game.vercel.app/">
-<meta property="og:title" content="MINEDROP ИГРАТЬ - Испытай удачу и выиграй призы">
-<meta property="og:description" content="Увлекательная игра MINEDROP с призами. Испытай удачу и выигрывай реальные деньги. Играй прямо сейчас!">
+<meta property="og:title" content="Minedrop — слот в стиле Майнкрафт с бонусами до ×5000">
+<meta property="og:description" content="Играй в слот Minedrop: стиль Майнкрафт, каскады, фриспины и бонусы до ×5000! Испытай удачу прямо сейчас. Играть в майндроп.">
 <meta property="og:image" content="https://minedrop-game.vercel.app/images/photo_2025-12-05_18-15-40.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Minedrop">
+<meta property="og:locale" content="ru_RU">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://minedrop-game.vercel.app/">
-<meta property="twitter:title" content="MINEDROP ИГРАТЬ - Испытай удачу и выиграй призы">
-<meta property="twitter:description" content="Увлекательная игра MINEDROP с призами. Испытай удачу и выигрывай реальные деньги. Играй прямо сейчас!">
+<meta property="twitter:title" content="Minedrop — слот в стиле Майнкрафт с бонусами до ×5000">
+<meta property="twitter:description" content="Играй в слот Minedrop: стиль Майнкрафт, каскады, фриспины и бонусы до ×5000! Испытай удачу прямо сейчас. Играть в майндроп.">
 <meta property="twitter:image" content="https://minedrop-game.vercel.app/images/photo_2025-12-05_18-15-40.png">
 
 <link rel="preload" href="fonts/BenzinBold.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Yandex Webmaster -->
+<meta name="yandex-verification" content="">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Minedrop",
+  "url": "https://minedrop-game.vercel.app/",
+  "description": "Играй в слот Minedrop: стиль Майнкрафт, каскады, фриспины и бонусы до ×5000! Играть в майндроп.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://minedrop-game.vercel.app/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Game",
+  "name": "Minedrop",
+  "description": "Слот-игра Minedrop в стиле Майнкрафт с бонусами до ×5000, каскадами и фриспинами",
+  "gamePlatform": "Telegram",
+  "applicationCategory": "Game",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "RUB"
+  }
+}
+</script>
 
 <style>
 @font-face{
@@ -468,15 +510,30 @@ document.getElementById('play').onclick=async()=>{
 
 /* Проверка работы Яндекс.Метрики */
 setTimeout(() => {
-  if (typeof ym !== 'undefined') {
+  if (typeof ym !== 'undefined' && typeof window.ym === 'function') {
     try {
-      const clientId = ym.getClientID(106258050);
-      console.log('✅ Яндекс.Метрика работает! Client ID:', clientId);
+      // Просто проверяем, что можем вызвать ym - это значит метрика работает
+      ym(106258050, 'reachGoal', 'page_view');
+      console.log('✅ Яндекс.Метрика работает! Счетчик ID: 106258050');
     } catch(e) {
-      console.log('⚠️ Яндекс.Метрика загружается...');
+      console.log('⚠️ Яндекс.Метрика загружается...', e.message);
     }
   } else {
     console.log('❌ Яндекс.Метрика не загрузилась. Проверьте блокировщики рекламы.');
+  }
+}, 2000);
+
+/* Проверка работы Google Tag Manager */
+setTimeout(() => {
+  if (typeof dataLayer !== 'undefined') {
+    console.log('✅ Google Tag Manager работает!');
+    dataLayer.push({
+      'event': 'page_view',
+      'page_title': 'Minedrop - Слот в стиле Майнкрафт | Играть в Minedrop',
+      'page_location': window.location.href
+    });
+  } else {
+    console.log('⚠️ Google Tag Manager загружается...');
   }
 }, 2000);
 </script>
